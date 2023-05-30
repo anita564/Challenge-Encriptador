@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg,rgb(72, 134, 170),rgb(92, 14, 122));
+}
+
+.logotipo{
+    padding: 20px;
+}
+
+#campo_texto::placeholder {
+color: #000000;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: bold;
+font-size:medium;
+
+}
+#campo_texto, #mensaje{
+background-color: transparent;
+outline: none;
+color: #000000;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: bold;
+font-size:medium;
+margin-left: 10%;
+border:none;
+border-radius: 8px;
+padding: 15px 32px;
+background-color: transparent;
+
+}
+
+.information{
+position:fixed;
+right: 35px;
+top: 20px;
+bottom: 20px;
+padding: 20px;
+background-color: cadetblue;
+border-radius: 20px;
+color: #000000;
+}
+    
+.information #message{
+font-weight: bold;
+font-family: cursive;
+color: white;
+font-size: 25px;
+text-align: center;
+padding-top:50px;
+}
+
+.information .copy-info textarea{
+    display: flex;  
+    width: 200px;
+    height: 100px;
+    padding:30px;
+    margin: 20px;
+    background-color: transparent;
+    margin-left: 15%;
+    border:none;
+    outline: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size:medium;
+    text-align: center;
+}
+.information .copy-info textarea::placeholder {
+    color: #000000;
+}
+.text_in_btns{
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+    padding:30px;
+    transform: translateX(-50%);
+    margin-bottom:40px;       
+}
+.botones{
+    width: 350px;
+    margin-left: 50px;
+    padding: 15px;
+    background-color:antiquewhite; 
+    color:black;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+
+}
+.copy-info .botones {
+    width:150px;
+    background-color:rgb(24, 63, 99); 
+    margin-left: 30%;
+
+}
+.copy-info .botones:hover{
+    background-color:indigo;
+}
+.botones:hover{
+    background-color:cadetblue; /* Green */ 
+}
+
+
+@media (max-width: 768px) {
+    .text_in_btns{
+        left: 25%;
+        padding:30px;       
+    }
+     .information{
+        top: 20px;
+        bottom: 20px;
+        padding: 10px;
+        border-radius: 30px;
+        }
+        .information #message{
+            font-size: 20px;
+            padding-top:20px; 
+        }
+        .botones{
+            width: 150px;
+            margin: 10px;
+            padding: 15px;
+        }
+        
+        .information .copy-info textarea{ 
+            width: 250px;
+            height: 50px;
+            padding:10px;
+            margin: 10px;
+            margin-left: 13%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .copy-info .botones {
+            width:100px;
+            margin: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            bottom: 20px;
+        }
+
+        #campo_texto, #mensaje{
+            background-color: transparent;
+            outline: none;
+            color: #000000;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size:medium;
+            margin-left: 10%;
+            border:none;
+            border-radius: 8px;
+            padding: 15px 32px;
+            background-color: transparent;
+        }
+}
+        @media only screen and (max-width: 600px) {
+       
+            .information{
+                position:fixed;
+                background-color: transparent;
+                margin-top: 35%;
+                
+                }
+            .img{
+                width: 70%;
+                margin-left: 60px; 
+                height: auto; 
+            }
+            .information .copy-info textarea{ 
+               margin-right: 50px;
+            }
+            .copy-info .botones{
+                display:none;
+            }
+            .botones{
+                margin-left: 200px;
+            }
+        }
+        
+        
+
+
+
+
+
+
+
+    
+
+
+
+
+
+   
+

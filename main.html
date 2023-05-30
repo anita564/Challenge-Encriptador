@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto | Oracle+Alura</title>
+   
+    <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="Style.css"> 
+
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="logotipo">
+                <img src="./imagenes/logo.svg" alt="Logo de Letra">
+                <!-- <label for="fname">T</label> -->
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="contenedor">
+                <div>
+                    <input type="texto" id="campo_texto" name="campo_texto" placeholder="Ingrese el texto aqui" onfocus="mostrarMensaje()" onblur="ocultarMensaje()">
+                    <p id="mensaje" style="display: none;">Recuerde No Colocar letras en mayuscula, ni caracteres especiales</p>
+                </div>    
+    
+                <div class="information">
+
+                        <div class="image">
+                            <img class="img" src="./imagenes/muneco.svg" alt="logo muñeco buscando">
+                            <h1 id="message">Ningún mensaje fue encontrado</h1>
+                        </div>
+                        
+                        <div class = "copy-info" >
+                            <textarea name="text_out_area" id="texto_textarea" placeholder="copiar el texto" enabel></textarea>
+                            <button onclick="copiar_texto()" class="botones" id="botonCopiar">Copiar</button>
+                        </div>
+               
+                        
+                </div>
+
+                <div class="text_in_btns">
+                    <button  onclick="handleClick()" class="botones" id=botonEncriptar type="button" value="Encriptar">Encriptar</button> 
+                    <button  onclick="DesencriptarTexto()"class="botones" id=botonDesencriptar type="botonDesencriptar" value="Desencriptar">Desencriptar</button> 
+                </div>  
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+
+    <footer class="footer">
+    </footer>
+    
+</body>
+
+</html>
